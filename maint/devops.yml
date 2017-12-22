@@ -3,7 +3,7 @@ native:
   debian:
     packages:
       - meson
-      - gobject-introspection
+      - libgirepository1.0-dev
   macos-homebrew:
     packages:
       - meson

@@ -9,7 +9,7 @@ addons:
     packages:
       #- meson     # meson is not on Travis CI trusty yet
       - python3-setuptools # to install meson
-      - gobject-introspection
+      - libgirepository1.0-dev
       - aspell     # for dzil Test::PodSpelling
       - aspell-en  # for dzil Test::PodSpelling
 matrix:
