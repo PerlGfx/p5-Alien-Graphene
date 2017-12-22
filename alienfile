@@ -15,7 +15,6 @@ share {
 	plugin Extract => 'tar.gz';
 
 	my $prop = meta_prop;
-	$prop->{destdir} = 1;
 
 	my @meson = qw(meson);
 	if( $prop->{platform}{system_type} eq 'windows-mingw' ) {
