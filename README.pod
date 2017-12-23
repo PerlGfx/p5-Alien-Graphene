@@ -10,6 +10,24 @@ Alien::Graphene - Alien package for the Graphene graphics math library
 
 version 0.001
 
+=head1 EXTENDS
+
+=over 4
+
+=item * L<Alien::Base>
+
+=back
+
+=head1 CLASS METHODS
+
+=head2 gi_typelib_path
+
+A path for using with L<Glib::Object::Introspection> to load the typelib
+needed.
+
+  use Env qw(@GI_TYPELIB_PATH);
+  push @GI_TYPELIB_PATH, Alien::Graphene->gi_typelib_path;
+
 =head1 SEE ALSO
 
 L<Graphene|http://ebassi.github.com/graphene>
