@@ -27,6 +27,23 @@ sub gi_typelib_path {
 		: ();
 }
 
+=classmethod pkg_config_path
+
+A path for using with L<ExtUtils::PkgConfig> to load the typelib
+needed.
+
+  use Env qw(@PKG_CONFIG_PATH);
+  push @PKG_CONFIG_PATH, Alien::Graphene->pkg_config_path;
+  my %pkg = ExtUtils::PkgConfig->find('graphene-gobject-1.0');
+
+=cut
+sub pkg_config_path {
+	my ($class) = @_;
+	$class->install_type eq 'share'
+		? ( File::Spec->catfile($class->dist_dir, qw(lib pkgconfig)) )
+		: ();
+}
+
 1;
 __END__
 =head1 SEE ALSO
