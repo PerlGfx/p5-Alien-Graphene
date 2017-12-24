@@ -28,6 +28,15 @@ needed.
   use Env qw(@GI_TYPELIB_PATH);
   push @GI_TYPELIB_PATH, Alien::Graphene->gi_typelib_path;
 
+=head2 pkg_config_path
+
+A path for using with L<ExtUtils::PkgConfig> to load the typelib
+needed.
+
+  use Env qw(@PKG_CONFIG_PATH);
+  push @PKG_CONFIG_PATH, Alien::Graphene->pkg_config_path;
+  my %pkg = ExtUtils::PkgConfig->find('graphene-gobject-1.0');
+
 =head1 SEE ALSO
 
 L<Graphene|http://ebassi.github.com/graphene>
