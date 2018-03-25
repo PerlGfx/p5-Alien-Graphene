@@ -27,7 +27,6 @@ share {
 	my $build_dir = '_build';
 	my @ninja_run = ("%{perl}", "%{.install.root}/../tool/ninja-run.pl");
 	build [
-		[ 'echo $LIBRARY_PATH' ],
 		[ @meson,
 			'--prefix=%{.install.prefix}',
 			'--libdir=lib',
