@@ -16,18 +16,10 @@ share {
 
 	my $prop = meta_prop;
 
-	my @meson = qw(meson);
-	if( $prop->{platform}{system_type} eq 'windows-mingw' ) {
-		chomp(my $meson_path = `which meson`);
-		die "meson not installed" unless $meson_path;
-		chomp(my $meson_path_win = `cygpath -m $meson_path`);
-		@meson = (qw(python3), $meson_path_win);
-	}
-
 	my $build_dir = '_build';
 	my @ninja_run = ("%{perl}", "%{.install.root}/../tool/ninja-run.pl");
 	build [
-		[ @meson,
+		[ qw(meson),
 			'--prefix=%{.install.prefix}',
 			'--libdir=lib',
 			'--buildtype=release',
