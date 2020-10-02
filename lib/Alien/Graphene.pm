@@ -33,4 +33,4 @@ __END__
 
 L<Graphene|http://ebassi.github.com/graphene>
 
-L<Repository information|http://project-renard.github.io/doc/development/repo/p5-Alien-Graphene/>
+

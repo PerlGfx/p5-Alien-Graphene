@@ -32,8 +32,6 @@ needed.
 
 L<Graphene|http://ebassi.github.com/graphene>
 
-L<Repository information|http://project-renard.github.io/doc/development/repo/p5-Alien-Graphene/>
-
 =head1 AUTHOR
 
 Zakariyya Mughal <zmughal@cpan.org>
