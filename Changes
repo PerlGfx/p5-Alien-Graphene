@@ -1,3 +1,22 @@
+«»
+
+  Features
+
+   - ~
+
+  Refactoring
+
+   - ~
+
+  Bug fixes
+
+   - ~
+
+  Build changes
+
+   - Update build option for introspection. This is now a feature that must be
+     enabled instead of just a boolean. See <https://github.com/ebassi/graphene/pull/200>.
+
 0.001 2020-10-17 00:51:37-0500
 
   Features
