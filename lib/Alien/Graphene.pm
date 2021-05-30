@@ -1,6 +1,6 @@
 package Alien::Graphene;
 # ABSTRACT: Alien package for the Graphene graphics math library
-$Alien::Graphene::VERSION = '0.001';
+$Alien::Graphene::VERSION = '0.002';
 use strict;
 use warnings;
 
@@ -32,7 +32,7 @@ Alien::Graphene - Alien package for the Graphene graphics math library
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 EXTENDS
 
