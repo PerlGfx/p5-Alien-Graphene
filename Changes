@@ -15,7 +15,8 @@
   Build changes
 
    - Update build option for introspection. This is now a feature that must be
-     enabled instead of just a boolean. See <https://github.com/ebassi/graphene/pull/200>.
+     enabled instead of just a boolean. See <https://github.com/ebassi/graphene/pull/200>
+     and <https://github.com/Intertangle/p5-Alien-Graphene/pull/7>.
 
 0.001 2020-10-17 00:51:37-0500
 
