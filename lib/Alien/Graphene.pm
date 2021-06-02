@@ -31,6 +31,6 @@ sub gi_typelib_path {
 __END__
 =head1 SEE ALSO
 
-L<Graphene|http://ebassi.github.com/graphene>
+L<Graphene|https://ebassi.github.io/graphene/>
 
 

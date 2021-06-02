@@ -1,3 +1,11 @@
+0.003 «»
+
+  Documentation
+
+   - Fixes <https://rt.cpan.org/Public/Bug/Display.html?id=136677>.
+     See <https://github.com/ebassi/graphene/issues/228>.
+     DJERIUS++ for the report.
+
 0.002 2021-05-30 12:59:28-0400
 
   Build changes
