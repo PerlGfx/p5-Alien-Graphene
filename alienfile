@@ -10,6 +10,8 @@ plugin 'PkgConfig' => 'graphene-gobject-1.0';
 share {
 	requires 'Alien::Build::Plugin::Gather::Dino';
 	requires 'Devel::FindPerl';
+	requires 'Alien::Meson';
+	requires 'Alien::Ninja';
 
 	plugin Download => (
 		url => 'https://github.com/ebassi/graphene/releases',
@@ -22,7 +24,7 @@ share {
 
 	my $build_dir = '_build';
 	build [
-		[ qw(meson),
+		[ '%{meson}',
 			'--prefix=%{.install.prefix}',
 			'--libdir=lib',
 			'--buildtype=release',
@@ -36,8 +38,8 @@ share {
 				push @PATH, $src_dir;
 			}
 		},
-		[ 'ninja', qw(-C), $build_dir, "test" ],
-		[ 'ninja', qw(-C), $build_dir, 'install' ],
+		[ '%{ninja}', qw(-C), $build_dir, "test" ],
+		[ '%{ninja}', qw(-C), $build_dir, 'install' ],
 	];
 
 	plugin 'Gather::Dino';
